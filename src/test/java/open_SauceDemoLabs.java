@@ -25,5 +25,6 @@ public class open_SauceDemoLabs {
 
         driver.findElement(By.id("react-burger-menu-btn")).click();
         driver.findElement(By.xpath("//a[contains(@id,\"logout\")]")).click();
+        System.out.print("hello world");
     }
 }
