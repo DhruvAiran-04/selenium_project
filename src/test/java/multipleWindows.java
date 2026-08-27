@@ -13,7 +13,7 @@ public class multipleWindows {
        driver.manage().window().maximize();
        driver.get("https://www.amazon.in/");
        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-       wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("twotabsearchtextbox")));Sj
+       wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("twotabsearchtextbox")));
        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Shoes");
        driver.findElement(By.id("nav-search-submit-button")).click();
        String parentWindow = driver.getWindowHandle();
